@@ -1,3 +1,4 @@
+#!/bin/sh
 code --install-extension aaron-bond.better-comments
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension anseki.vscode-color
