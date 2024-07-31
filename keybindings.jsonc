@@ -1,7 +1,7 @@
 //! VSCode keybindings.json file.
 //! Version: 1.19.1
-//! Source: https://github.com/skewb1k/vscode-config
-//! ------------------------------------------------
+//! Source: https://github.com/skewb1k/vscode-settings
+//! --------------------------------------------------
 [
   {
     "key": "ctrl+f10",
