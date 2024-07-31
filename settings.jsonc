@@ -1,0 +1,233 @@
+//! VSCode settings.json file.
+//! Version: 1.19.1
+//! Source: https://github.com/skewb1k/vscode-config
+//! ------------------------------------------------
+{
+  // ========== Theme ==========
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Bearded Theme feat. Melle Julie",
+
+  // ========== Font ==========
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 18,
+  "editor.fontWeight": "bold",
+  "editor.fontVariations": true,
+  "editor.letterSpacing": 0.3,
+
+  // ========== Terminal ==========
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.cursorBlinking": true,
+  "output.smartScroll.enabled": false,
+
+  // ========== Window ==========
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "window.openFilesInNewWindow": "off",
+  "window.customMenuBarAltFocus": false,
+  "window.titleBarStyle": "custom",
+  "window.title": "${rootName}",
+  "window.enableMenuBarMnemonics": false,
+  "window.customTitleBarVisibility": "never",
+  "window.zoomLevel": 1,
+
+  // ========== Workbench ==========
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.layoutControl.enabled": false,
+
+  // ========== Tabs ==========
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.decorations.badges": false,
+
+  // ========== Sidebar ==========
+  "workbench.sideBar.location": "right",
+
+  // ========== Tree ==========
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.tree.renderIndentGuides": "onHover",
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+
+  // ========== Trust rules ==========
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+  "security.workspace.trust.banner": "never",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // ========== Editor ==========
+  "editor.folding": false,
+  "editor.stablePeek": false,
+  "editor.matchBrackets": "never",
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.smoothScrolling": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.codeLens": false,
+  "editor.lineNumbers": "relative",
+  "editor.mouseWheelScrollSensitivity": 2,
+  "editor.lightbulb.enabled": "off",
+  "editor.cursorBlinking": "smooth",
+  "editor.parameterHints.enabled": false,
+  "editor.scrollbar.horizontalScrollbarSize": 10,
+  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.bracketPairColorization.enabled": false,
+  "scm.diffDecorations": "none",
+  "breadcrumbs.enabled": false,
+
+  // ========== Formatting ==========
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "eslint.run": "onSave",
+  "prettier.printWidth": 120,
+  "gopls": {
+    "formatting.gofumpt": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.analysis.autoImportCompletions": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  // ========== Goto ==========
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "testing.automaticallyOpenPeekView": "never",
+  "references.preferredLocation": "view",
+
+  // ========== Minimap ==========
+  "editor.minimap.enabled": false,
+
+  // ========== Git ==========
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "never",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+
+  // ========== Code run ==========
+  "python.terminal.executeInFileDir": true,
+  "code-runner.runInTerminal": true,
+
+  // ========== Extensions ==========
+  "extensions.ignoreRecommendations": true,
+
+  // ========== Telemetry ==========
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "postman.telemetry.enabled": false,
+  "cody.telemetry.level": "off",
+  "database-client.telemetry.usesOnlineServices": false,
+
+  // ========== Telemetry ==========
+  "keyboard.dispatch": "keyCode",
+  "files.maxMemoryForLargeFilesMB": 16392,
+  "update.mode": "none",
+
+  // ========== Vscord ==========
+  "vscord.app.name": "Visual Studio Code",
+  "vscord.status.idle.check": false,
+  "vscord.status.idle.enabled": false,
+  "vscord.status.problems.enabled": false,
+  "vscord.status.details.text.editing": "In {workspace}",
+  "vscord.status.details.text.viewing": "In {workspace}",
+  "vscord.status.state.text.editing": "Working on {file_name}{file_extension}",
+  "vscord.status.state.idle.enabled": false,
+  "vscord.status.buttons.button1.enabled": false,
+  "vscord.status.buttons.button1.git.active.enabled": false,
+  "vscord.status.buttons.button1.git.idle.enabled": false,
+  "vscord.status.buttons.button1.git.inactive.enabled": false,
+  "vscord.status.image.small.editing.key": "",
+  "vscord.status.image.small.editing.text": "",
+  "vscord.status.image.small.idle.key": "",
+  "vscord.status.image.small.idle.text": "",
+  "vscord.status.image.small.notInFile.key": "",
+  "vscord.status.image.small.notInFile.text": "",
+  "vscord.status.image.small.viewing.key": "",
+  "vscord.status.image.small.viewing.text": "",
+
+  // ========== Peacock ==========
+  "peacock.affectActivityBar": false,
+  "peacock.affectTitleBar": false,
+
+  // ========== Emmet ==========
+  "emmet.triggerExpansionOnTab": true,
+  "files.autoSave": "off",
+
+  // ========== ErrorLens ==========
+  "errorLens.replaceLinebreaksSymbol": "",
+  "errorLens.codeLensLength": {
+    "max": 20
+  },
+  "errorLens.messageMaxChars": 100,
+
+  // ========== Snippets Viewer ==========
+  "snippets.viewer.expandSnippetFiles": true,
+
+  // ========== Todo tree ==========
+  "todo-tree.tree.disableCompactFolders": true,
+  "todo-tree.tree.expanded": true,
+  "todo-tree.tree.flat": true,
+  "todo-tree.highlights.enabled": false,
+
+  // ========== Vim ==========
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // ========== Cody ==========
+  "cody.codeActions.enabled": false,
+  "cody.commandHints.enabled": false,
+  "cody.autocomplete.advanced.provider": "anthropic",
+  "cody.autocomplete.formatOnAccept": true,
+  "editor.inlineSuggest.suppressSuggestions": true
+}
