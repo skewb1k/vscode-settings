@@ -176,10 +176,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "alt+q",
-    "command": "terminals.runTerminals"
-  },
-  {
     "key": "ctrl+shift+s",
     "command": "-workbench.action.files.saveAs"
   },
@@ -248,6 +244,26 @@
     "command": "-workbench.action.terminal.killEditor",
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
   },
+  // {
+  // 	"key": "ctrl+l",
+  // 	"command": "cursorRight",
+  // 	"when": "editorTextFocus && vim.mode === 'Insert'"
+  // },
+  // {
+  // 	"key": "ctrl+h",
+  // 	"command": "cursorLeft",
+  // 	"when": "editorTextFocus && vim.mode === 'Insert'"
+  // },
+  // {
+  // 	"key": "ctrl+j",
+  // 	"command": "cursorDown",
+  // 	"when": "editorTextFocus && vim.mode === 'Insert'"
+  // },
+  // {
+  // 	"key": "ctrl+k",
+  // 	"command": "cursorUp",
+  // 	"when": "editorTextFocus && vim.mode === 'Insert'"
+  // },
   {
     "key": "ctrl+k",
     "command": "-extension.vim_ctrl+k",
@@ -496,5 +512,33 @@
     "key": "alt+j",
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+r r",
+    "command": "-yarn-script.runScriptLast",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r shift+r",
+    "command": "-yarn-script.runScript",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r shift+x",
+    "command": "-yarn-script.terminate",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r t",
+    "command": "-yarn-script.test",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
   }
 ]

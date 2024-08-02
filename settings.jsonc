@@ -5,7 +5,7 @@
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "GitHub Dark",
 
   // ========== Font ==========
   "editor.fontFamily": "Fira Code",
@@ -62,6 +62,7 @@
   // ========== Editor ==========
   "editor.folding": false,
   "editor.stablePeek": false,
+  "editor.inlineSuggest.suppressSuggestions": true,
   "editor.matchBrackets": "never",
   "editor.guides.highlightActiveIndentation": false,
   "editor.scrollBeyondLastLine": false,
@@ -189,6 +190,7 @@
   "vscord.status.image.small.notInFile.text": "",
   "vscord.status.image.small.viewing.key": "",
   "vscord.status.image.small.viewing.text": "",
+  "vscord.behaviour.suppressNotifications": true,
 
   // ========== Peacock ==========
   "peacock.affectActivityBar": false,
@@ -208,12 +210,6 @@
   // ========== Snippets Viewer ==========
   "snippets.viewer.expandSnippetFiles": true,
 
-  // ========== Todo tree ==========
-  "todo-tree.tree.disableCompactFolders": true,
-  "todo-tree.tree.expanded": true,
-  "todo-tree.tree.flat": true,
-  "todo-tree.highlights.enabled": false,
-
   // ========== Vim ==========
   "vim.useSystemClipboard": true,
   "vim.insertModeKeyBindings": [
@@ -227,6 +223,5 @@
   "cody.codeActions.enabled": false,
   "cody.commandHints.enabled": false,
   "cody.autocomplete.advanced.provider": "anthropic",
-  "cody.autocomplete.formatOnAccept": true,
-  "editor.inlineSuggest.suppressSuggestions": true
+  "cody.autocomplete.formatOnAccept": true
 }
