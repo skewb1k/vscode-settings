@@ -3,6 +3,7 @@ code --install-extension aaron-bond.better-comments
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension anseki.vscode-color
 code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension arjun.swagger-viewer
 code --install-extension aslamanver.vsc-export
 code --install-extension aykutsarac.jsoncrack-vscode
 code --install-extension azemoh.one-monokai
@@ -65,6 +66,7 @@ code --install-extension napthedevhcj.atom-background-modified
 code --install-extension njpwerner.autodocstring
 code --install-extension njqdev.vscode-python-typehint
 code --install-extension pkief.material-icon-theme
+code --install-extension postman.postman-for-vscode
 code --install-extension randomfractalsinc.snippets-viewer
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
@@ -85,4 +87,5 @@ code --install-extension whizkydee.material-palenight-theme
 code --install-extension wix.vscode-import-cost
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zainchen.json
+code --install-extension zanza00.random-theme-switcher
 code --install-extension zguolee.tabler-icons

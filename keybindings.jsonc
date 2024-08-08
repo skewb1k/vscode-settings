@@ -1,5 +1,5 @@
 //! VSCode keybindings.json file.
-//! Version: 1.19.1
+//! Version: 1.92.0
 //! Source: https://github.com/skewb1k/vscode-settings
 //! --------------------------------------------------
 [
@@ -540,5 +540,13 @@
   {
     "key": "ctrl+alt+n",
     "command": "-code-runner.run"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+t",
+    "command": "-randomThemeSwitcher.switchTheme"
+  },
+  {
+    "key": "ctrl+f12",
+    "command": "randomThemeSwitcher.switchTheme"
   }
 ]
