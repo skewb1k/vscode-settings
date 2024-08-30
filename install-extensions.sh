@@ -1,6 +1,7 @@
 #!/bin/sh
 code --install-extension aaron-bond.better-comments
 code --install-extension akamud.vscode-theme-onedark
+code --install-extension anotherglitchinthematrix.monochrome
 code --install-extension anseki.vscode-color
 code --install-extension arcticicestudio.nord-visual-studio-code
 code --install-extension arjun.swagger-viewer
@@ -9,7 +10,6 @@ code --install-extension aykutsarac.jsoncrack-vscode
 code --install-extension azemoh.one-monokai
 code --install-extension bbenoist.nix
 code --install-extension beardedbear.beardedtheme
-code --install-extension bierner.markdown-mermaid
 code --install-extension cardinal90.multi-cursor-case-preserve
 code --install-extension chrisdias.vscode-opennewinstance
 code --install-extension christian-kohler.npm-intellisense
@@ -27,12 +27,10 @@ code --install-extension editorconfig.editorconfig
 code --install-extension eliverlara.andromeda
 code --install-extension enkia.tokyo-night
 code --install-extension equinusocio.vsc-material-theme
-code --install-extension equinusocio.vsc-material-theme-icons
 code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension fractalbrew.backticks
-code --install-extension gamunu.vscode-yarn
 code --install-extension geeebe.duplicate
 code --install-extension github.github-vscode-theme
 code --install-extension github.vscode-pull-request-github
@@ -47,6 +45,7 @@ code --install-extension liuchao.go-struct-tag
 code --install-extension mariusschulz.yarn-lock-syntax
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mgesbert.python-path
+code --install-extension mgmcdermott.vscode-language-babel
 code --install-extension mhutchie.git-graph
 code --install-extension michelemelluso.gitignore
 code --install-extension monish.regexsnippets
@@ -59,6 +58,7 @@ code --install-extension ms-python.vscode-pylance
 code --install-extension ms-vscode-remote.remote-containers
 code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode-remote.remote-wsl
+code --install-extension ms-vscode.makefile-tools
 code --install-extension ms-vscode.remote-explorer
 code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension ms-vsliveshare.vsliveshare
@@ -68,6 +68,7 @@ code --install-extension njqdev.vscode-python-typehint
 code --install-extension pkief.material-icon-theme
 code --install-extension postman.postman-for-vscode
 code --install-extension randomfractalsinc.snippets-viewer
+code --install-extension rangav.vscode-thunder-client
 code --install-extension redhat.vscode-xml
 code --install-extension redhat.vscode-yaml
 code --install-extension samuelepignone.fakedonalds
@@ -88,4 +89,3 @@ code --install-extension wix.vscode-import-cost
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zainchen.json
 code --install-extension zanza00.random-theme-switcher
-code --install-extension zguolee.tabler-icons

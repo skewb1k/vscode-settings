@@ -1,11 +1,11 @@
 //! VSCode settings.json file.
-//! Version: 1.92.0
+//! Version: 1.92.2
 //! Source: https://github.com/skewb1k/vscode-settings
 //! --------------------------------------------------
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Bearded Theme Earth",
+  "workbench.colorTheme": "Monochrome Dark",
 
   // ========== Font ==========
   "editor.fontFamily": "Fira Code",
@@ -40,7 +40,7 @@
 
   // ========== Tabs ==========
   "workbench.editor.wrapTabs": true,
-  "workbench.editor.labelFormat": "short",
+  // "workbench.editor.labelFormat": "medium",
   "workbench.editor.enablePreview": false,
   "workbench.editor.decorations.badges": false,
 
@@ -56,7 +56,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "security.workspace.trust.enabled": false,
   "security.workspace.trust.banner": "never",
-  "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
 
   // ========== Editor ==========
@@ -88,12 +87,14 @@
   "editor.formatOnPaste": false,
   "eslint.run": "onSave",
   "prettier.printWidth": 120,
+  "files.trimTrailingWhitespace": true,
   "gopls": {
     "formatting.gofumpt": true
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "python.analysis.autoImportCompletions": true,
+  "makefile.configureOnOpen": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -154,9 +155,6 @@
   "python.terminal.executeInFileDir": true,
   "code-runner.runInTerminal": true,
 
-  // ========== Extensions ==========
-  "extensions.ignoreRecommendations": true,
-
   // ========== Telemetry ==========
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
@@ -164,10 +162,14 @@
   "cody.telemetry.level": "off",
   "database-client.telemetry.usesOnlineServices": false,
 
-  // ========== Telemetry ==========
+  // ========== Other ==========
   "keyboard.dispatch": "keyCode",
   "files.maxMemoryForLargeFilesMB": 16392,
   "update.mode": "none",
+  "explorer.confirmDelete": false,
+
+  // ========== Extensions ==========
+  "extensions.ignoreRecommendations": true,
 
   // ========== Vscord ==========
   "vscord.app.name": "Visual Studio Code",
@@ -211,13 +213,39 @@
   "snippets.viewer.expandSnippetFiles": true,
 
   // ========== Vim ==========
+  "vim.leader": "<Space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
   "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  // "vim.hlsearch": true,
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-d>": false,
+    "<C-w>": false,
+    "<C-f>": false,
+    "<C-r>": false,
+    "<C-p>": false,
+    "<C-c>": false,
+    "<C-x>": false
+  },
   "vim.insertModeKeyBindings": [
     {
-      "before": ["k", "j"],
+      "before": ["j", "k"],
       "after": ["<Esc>"]
     }
   ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    }
+  ],
+
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
 
   // ========== Cody ==========
   "cody.codeActions.enabled": false,
@@ -288,6 +316,7 @@
     "Material Theme Ocean High Contrast",
     "Material Theme Palenight",
     "Material Theme Palenight High Contrast",
+    "Monochrome Dark",
     "Monokai Classic",
     "Monokai Pro",
     "Monokai Pro (Filter Machine)",
