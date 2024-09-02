@@ -5,7 +5,7 @@
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Monochrome Dark",
+  "workbench.colorTheme": "Atom One Dark",
 
   // ========== Font ==========
   "editor.fontFamily": "Fira Code",
@@ -170,6 +170,8 @@
 
   // ========== Extensions ==========
   "extensions.ignoreRecommendations": true,
+  "go.lintOnSave": "workspace",
+  "go.showWelcome": false,
 
   // ========== Vscord ==========
   "vscord.app.name": "Visual Studio Code",
@@ -225,6 +227,8 @@
     "<C-w>": false,
     "<C-f>": false,
     "<C-r>": false,
+    "<C-[>": false,
+    "<C-]>": false,
     "<C-p>": false,
     "<C-c>": false,
     "<C-x>": false

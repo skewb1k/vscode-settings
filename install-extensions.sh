@@ -45,7 +45,6 @@ code --install-extension liuchao.go-struct-tag
 code --install-extension mariusschulz.yarn-lock-syntax
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mgesbert.python-path
-code --install-extension mgmcdermott.vscode-language-babel
 code --install-extension mhutchie.git-graph
 code --install-extension michelemelluso.gitignore
 code --install-extension monish.regexsnippets
