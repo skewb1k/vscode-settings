@@ -1,5 +1,5 @@
 //! VSCode keybindings.json file.
-//! Version: 1.93.0
+//! Version: 1.93.1
 //! Source: https://github.com/skewb1k/vscode-settings
 //! --------------------------------------------------
 [
@@ -157,19 +157,37 @@
   },
   {
     "key": "ctrl+=",
-    "command": "editor.action.fontZoomIn"
+    "command": "editor.action.fontZoomIn",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+-",
-    "command": "editor.action.fontZoomOut"
+    "command": "editor.action.fontZoomOut",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+0",
-    "command": "editor.action.fontZoomReset"
+    "command": "editor.action.fontZoomReset",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+0",
     "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "workbench.action.terminal.fontZoomIn",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "workbench.action.terminal.fontZoomOut",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.terminal.fontZoomReset",
+    "when": "terminalFocus"
   },
 
   // ========== Renaming ==========

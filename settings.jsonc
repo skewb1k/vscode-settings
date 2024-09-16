@@ -1,11 +1,12 @@
 //! VSCode settings.json file.
-//! Version: 1.93.0
+//! Version: 1.93.1
 //! Source: https://github.com/skewb1k/vscode-settings
 //! --------------------------------------------------
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Atom One Dark",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Gruvbox Dark Medium",
 
   // ========== Font ==========
   "editor.fontFamily": "Fira Code",
@@ -18,6 +19,7 @@
   // ========== Terminal ==========
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.list.smoothScrolling": true,
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.cursorBlinking": true,
   "output.smartScroll.enabled": false,
@@ -30,8 +32,6 @@
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
   "window.enableMenuBarMnemonics": false,
-  "window.customTitleBarVisibility": "never",
-  "window.zoomLevel": 1,
 
   // ========== Workbench ==========
   "workbench.tips.enabled": false,
@@ -45,12 +45,14 @@
   "workbench.editor.decorations.badges": false,
 
   // ========== Sidebar ==========
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
+  "workbench.activityBar.location": "bottom",
 
   // ========== Tree ==========
   "workbench.tree.expandMode": "doubleClick",
   "explorer.autoReveal": false,
   "explorer.compactFolders": false,
+  "explorer.confirmPasteNative": false,
 
   // ========== Trust rules ==========
   "security.workspace.trust.untrustedFiles": "open",
@@ -67,7 +69,6 @@
   "editor.scrollBeyondLastLine": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.quickSuggestionsDelay": 0,
-  "editor.smoothScrolling": true,
   "editor.inlayHints.enabled": "off",
   "editor.codeLens": false,
   "editor.lineNumbers": "relative",
@@ -165,12 +166,12 @@
   // ========== Other ==========
   "keyboard.dispatch": "keyCode",
   "files.maxMemoryForLargeFilesMB": 16392,
-  "update.mode": "none",
+  "update.mode": "default",
   "explorer.confirmDelete": false,
-  "files.autoSave": "off",
 
   // ========== Extensions ==========
   "extensions.ignoreRecommendations": true,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
   "go.lintOnSave": "workspace",
   "go.showWelcome": false,
 
@@ -203,6 +204,7 @@
 
   // ========== Emmet ==========
   "emmet.triggerExpansionOnTab": true,
+  "files.autoSave": "off",
 
   // ========== ErrorLens ==========
   "errorLens.replaceLinebreaksSymbol": "",
@@ -230,7 +232,8 @@
     "<C-]>": false,
     "<C-p>": false,
     "<C-c>": false,
-    "<C-x>": false
+    "<C-x>": false,
+    "<C-t>": false
   },
   "vim.insertModeKeyBindings": [
     {
@@ -301,7 +304,6 @@
     "Bearded Theme feat. Melle Julie",
     "Bearded Theme feat. Will",
     "Default Dark Modern",
-    "Dracula Theme",
     "Field Lights",
     "GitHub Dark",
     "GitHub Dark Default",
@@ -327,12 +329,16 @@
     "Monokai Pro (Filter Ristretto)",
     "Monokai Pro (Filter Spectrum)",
     "Nord",
-    "One Monokai",
     "Palenight (Mild Contrast)",
     "Palenight Theme",
     "Panda Syntax",
     "Tokyo Night",
     "Tokyo Night Storm"
   ],
-  "randomThemeSwitcher.switchMode": "manual"
+  "randomThemeSwitcher.switchMode": "manual",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "python.createEnvironment.trigger": "off",
+  "go.toolsManagement.autoUpdate": true
 }
