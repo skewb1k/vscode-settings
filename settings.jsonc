@@ -5,8 +5,10 @@
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 1,
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorCustomizations": {
+    "editor.linkedEditingBackground": "#00000000"
+  },
 
   // ========== Font ==========
   "editor.fontFamily": "Fira Code",
@@ -19,12 +21,13 @@
   // ========== Terminal ==========
   "terminal.integrated.fontFamily": "Fira Code",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "workbench.list.smoothScrolling": true,
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
   "output.smartScroll.enabled": false,
 
   // ========== Window ==========
+  "window.zoomLevel": 1,
   "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
   "window.openFilesInNewWindow": "off",
@@ -37,12 +40,14 @@
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
+  "workbench.list.smoothScrolling": true,
 
   // ========== Tabs ==========
   "workbench.editor.wrapTabs": true,
   // "workbench.editor.labelFormat": "medium",
   "workbench.editor.enablePreview": false,
   "workbench.editor.decorations.badges": false,
+  "workbench.editor.decorations.colors": false,
 
   // ========== Sidebar ==========
   "workbench.sideBar.location": "left",
@@ -71,20 +76,55 @@
   "editor.quickSuggestionsDelay": 0,
   "editor.inlayHints.enabled": "off",
   "editor.codeLens": false,
+  "editor.overviewRulerBorder": false,
   "editor.lineNumbers": "relative",
   "editor.mouseWheelScrollSensitivity": 2,
   "editor.lightbulb.enabled": "off",
   "editor.cursorBlinking": "smooth",
+  "editor.maxTokenizationLineLength": 1000,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
-  "editor.scrollbar.horizontalScrollbarSize": 10,
-  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.showFoldingControls": "never",
+  "editor.scrollbar.horizontalScrollbarSize": 8,
+  "editor.scrollbar.verticalScrollbarSize": 8,
   "editor.bracketPairColorization.enabled": false,
+  "editor.colorDecoratorsLimit": 100,
+  "editor.accessibilitySupport": "off",
+  "editor.find.addExtraSpaceOnTop": false,
+  "editor.screenReaderAnnounceInlineSuggestion": false,
+  "editor.glyphMargin": false,
   "scm.diffDecorations": "none",
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.icons": false,
+  "breadcrumbs.symbolPath": "off",
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showArrays": false,
+  "breadcrumbs.showEvents": false,
+  "breadcrumbs.showFields": false,
+  "breadcrumbs.showClasses": false,
+  "breadcrumbs.showMethods": false,
+  "breadcrumbs.showNumbers": false,
+  "breadcrumbs.showObjects": false,
+  "breadcrumbs.showModules": false,
+  "breadcrumbs.showBooleans": false,
+  "breadcrumbs.showPackages": false,
+  "breadcrumbs.showFunctions": false,
+  "breadcrumbs.showConstants": false,
+  "breadcrumbs.showOperators": false,
+  "breadcrumbs.showInterfaces": false,
+  "breadcrumbs.showNamespaces": false,
+  "breadcrumbs.showEnumMembers": false,
+  "breadcrumbs.showConstructors": false,
+
+  // ========== Diff editor ==========
+  "diffEditor.hideUnchangedRegions.enabled": true,
 
   // ========== Formatting ==========
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.formatOnPaste": false,
   "eslint.run": "onSave",
   "prettier.printWidth": 120,
@@ -133,6 +173,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 
   // ========== Goto ==========
   "editor.gotoLocation.multipleDeclarations": "goto",
@@ -168,6 +211,7 @@
   "files.maxMemoryForLargeFilesMB": 16392,
   "update.mode": "default",
   "explorer.confirmDelete": false,
+  "accessibility.hideAccessibleView": true,
 
   // ========== Extensions ==========
   "extensions.ignoreRecommendations": true,
@@ -218,23 +262,12 @@
 
   // ========== Vim ==========
   "vim.leader": "<Space>",
-  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-d>": false,
-    "<C-w>": false,
-    "<C-f>": false,
-    "<C-r>": false,
-    "<C-[>": false,
-    "<C-]>": false,
-    "<C-p>": false,
-    "<C-c>": false,
-    "<C-x>": false,
-    "<C-t>": false
-  },
+  // "vim.handleKeys": {
+  //   "<C-[>": false,
+  //   "<C-]>": false
+  // },
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -245,6 +278,14 @@
     {
       "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":wq"]
+    },
+    {
+      "before": ["[", "b"],
+      "commands": [":bprevious"]
     }
   ],
 
@@ -254,10 +295,8 @@
   },
 
   // ========== Cody ==========
-  "cody.codeActions.enabled": false,
-  "cody.commandHints.enabled": false,
-  "cody.autocomplete.advanced.provider": "anthropic",
   "cody.autocomplete.formatOnAccept": true,
+  "cody.commandHints.enabled": false,
 
   // ======== Random Theme Switcher ========
   "randomThemeSwitcher.themeList": [
@@ -335,10 +374,6 @@
     "Tokyo Night",
     "Tokyo Night Storm"
   ],
-  "randomThemeSwitcher.switchMode": "manual",
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "python.createEnvironment.trigger": "off",
-  "go.toolsManagement.autoUpdate": true
+
+  "randomThemeSwitcher.switchMode": "manual"
 }

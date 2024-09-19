@@ -2,7 +2,6 @@
 code --install-extension aaron-bond.better-comments
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension anotherglitchinthematrix.monochrome
-code --install-extension anseki.vscode-color
 code --install-extension arcticicestudio.nord-visual-studio-code
 code --install-extension arjun.swagger-viewer
 code --install-extension aykutsarac.jsoncrack-vscode
@@ -28,7 +27,6 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension fractalbrew.backticks
-code --install-extension geeebe.duplicate
 code --install-extension github.github-vscode-theme
 code --install-extension github.vscode-pull-request-github
 code --install-extension golang.go
@@ -40,11 +38,9 @@ code --install-extension johnpapa.vscode-peacock
 code --install-extension kevinrose.vsc-python-indent
 code --install-extension leonardssh.vscord
 code --install-extension liuchao.go-struct-tag
-code --install-extension mariusschulz.yarn-lock-syntax
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mgesbert.python-path
 code --install-extension mhutchie.git-graph
-code --install-extension michelemelluso.gitignore
 code --install-extension monish.regexsnippets
 code --install-extension monokai.theme-monokai-pro-vscode
 code --install-extension ms-azuretools.vscode-docker
@@ -58,7 +54,6 @@ code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode.cmake-tools
 code --install-extension ms-vscode.cpptools
 code --install-extension ms-vscode.makefile-tools
-code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension napthedevhcj.atom-background-modified
 code --install-extension njpwerner.autodocstring
@@ -86,5 +81,4 @@ code --install-extension wakatime.vscode-wakatime
 code --install-extension whizkydee.material-palenight-theme
 code --install-extension wix.vscode-import-cost
 code --install-extension yzhang.markdown-all-in-one
-code --install-extension zainchen.json
 code --install-extension zanza00.random-theme-switcher

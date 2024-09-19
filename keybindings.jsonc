@@ -105,6 +105,11 @@
     "command": "undo",
     "when": "listFocus && !inputFocus && !treestickyScrollFocusedexplorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
   },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
 
   // ========== Peacock ==========
   {
@@ -202,22 +207,12 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "f6",
-    "command": "renameFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
     "key": "f2",
     "command": "-renameFile",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
 
   // ========== Editor ==========
-  {
-    "key": "ctrl+d",
-    "command": "geeebe.duplicateText",
-    "when": "editorTextFocus"
-  },
   {
     "key": "ctrl+shift+/",
     "command": "editor.action.blockComment",
