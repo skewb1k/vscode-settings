@@ -1,5 +1,4 @@
 //! VSCode keybindings.json file.
-//! Version: 1.93.1
 //! Source: https://github.com/skewb1k/vscode-settings
 //! --------------------------------------------------
 [
@@ -35,6 +34,11 @@
   {
     "key": "ctrl+k ctrl+t",
     "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "alt+d",
+    "command": "-cody.command.document-code",
+    "when": "cody.activated && !editorReadonly"
   },
   {
     "key": "ctrl+k ctrl+s",
@@ -91,6 +95,21 @@
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   },
   {
+    "key": "v",
+    "command": "list.toggleSelection",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "shift+k",
+    "command": "list.expandSelectionUp",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "shift+j",
+    "command": "list.expandSelectionDown",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
     "key": "l",
     "command": "list.toggleExpand",
     "when": "listFocus && !inputFocus && !treestickyScrollFocused"
@@ -98,12 +117,12 @@
   {
     "key": "d",
     "command": "moveFileToTrash",
-    "when": "listFocus && !inputFocus && !treestickyScrollFocusedexplorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    "when": "listFocus && !treestickyScrollFocusedexplorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
   },
   {
     "key": "u",
     "command": "undo",
-    "when": "listFocus && !inputFocus && !treestickyScrollFocusedexplorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+    "when": "listFocus && !treestickyScrollFocusedexplorerResourceMoveableToTrash && filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
   },
   {
     "key": "r",
@@ -282,6 +301,21 @@
     "when": "codeActionMenuVisible",
     "command": "selectNextCodeAction"
   },
+  {
+    "key": "alt+k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.showHover",
+    "when": "editorHoverVisible"
+  },
 
   // ========== hjkl-like resizing ==========
   {
@@ -306,11 +340,11 @@
     "command": "-code-runner.runCustomCommand"
   },
   {
-    "key": "ctrl+alt+h",
+    "key": "ctrl+alt+l",
     "command": "workbench.action.decreaseViewWidth"
   },
   {
-    "key": "ctrl+alt+l",
+    "key": "ctrl+alt+h",
     "command": "workbench.action.increaseViewWidth"
   },
 
@@ -344,6 +378,11 @@
   },
 
   // ========== Accept on tab ==========
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.acceptSelectedQuickOpenItem",
+    "when": "inQuickOpen"
+  },
   {
     "key": "tab",
     "command": "workbench.action.acceptSelectedQuickOpenItem",
@@ -457,6 +496,23 @@
   {
     "key": "ctrl+d",
     "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    "when": "terminalFocus"
+  },
+
+  // ========== Leader binds with closed editor ==========
+  {
+    "key": "space r",
+    "command": "workbench.action.openRecent",
+    "when": "!editorIsOpen && !terminalFocus && !inputBoxFocus"
+  },
+  {
+    "key": "space space",
+    "command": "workbench.action.quickOpen",
+    "when": "!editorIsOpen && !terminalFocus && !inputBoxFocus"
+  },
+  {
+    "key": "space o",
+    "command": "workbench.action.files.openFolder",
+    "when": "!editorIsOpen && !terminalFocus && !inputBoxFocust"
   }
 ]

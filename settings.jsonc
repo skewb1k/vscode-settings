@@ -1,11 +1,10 @@
 //! VSCode settings.json file.
-//! Version: 1.93.1
 //! Source: https://github.com/skewb1k/vscode-settings
 //! --------------------------------------------------
 {
   // ========== Theme ==========
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "poimandres-noitalics",
   "workbench.colorCustomizations": {
     "editor.linkedEditingBackground": "#00000000"
   },
@@ -13,7 +12,7 @@
   // ========== Font ==========
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.fontWeight": "bold",
   "editor.fontVariations": true,
   "editor.letterSpacing": 0.3,
@@ -23,10 +22,8 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.smoothScrolling": true,
+  // "terminal.integrated.smoothScrolling": true,
   "output.smartScroll.enabled": false,
-
-  // ========== Window ==========
   "window.zoomLevel": 1,
   "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
@@ -34,13 +31,14 @@
   "window.customMenuBarAltFocus": false,
   "window.titleBarStyle": "custom",
   "window.title": "${rootName}",
+  "window.customTitleBarVisibility": "auto",
   "window.enableMenuBarMnemonics": false,
 
   // ========== Workbench ==========
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.layoutControl.enabled": false,
-  "workbench.list.smoothScrolling": true,
+  // "workbench.list.smoothScrolling": true,
 
   // ========== Tabs ==========
   "workbench.editor.wrapTabs": true,
@@ -80,10 +78,11 @@
   "editor.lineNumbers": "relative",
   "editor.mouseWheelScrollSensitivity": 2,
   "editor.lightbulb.enabled": "off",
+  "editor.formatOnSave": true,
   "editor.cursorBlinking": "smooth",
   "editor.maxTokenizationLineLength": 1000,
-  "editor.smoothScrolling": true,
-  "editor.cursorSmoothCaretAnimation": "on",
+  // "editor.smoothScrolling": true,
+  // "editor.cursorSmoothCaretAnimation": "on",
   "editor.linkedEditing": true,
   "editor.parameterHints.enabled": false,
   "editor.showFoldingControls": "never",
@@ -99,49 +98,35 @@
   "breadcrumbs.enabled": true,
   "breadcrumbs.icons": false,
   "breadcrumbs.symbolPath": "off",
-  "breadcrumbs.showKeys": false,
-  "breadcrumbs.showArrays": false,
-  "breadcrumbs.showEvents": false,
-  "breadcrumbs.showFields": false,
-  "breadcrumbs.showClasses": false,
-  "breadcrumbs.showMethods": false,
-  "breadcrumbs.showNumbers": false,
-  "breadcrumbs.showObjects": false,
-  "breadcrumbs.showModules": false,
-  "breadcrumbs.showBooleans": false,
-  "breadcrumbs.showPackages": false,
-  "breadcrumbs.showFunctions": false,
-  "breadcrumbs.showConstants": false,
-  "breadcrumbs.showOperators": false,
-  "breadcrumbs.showInterfaces": false,
-  "breadcrumbs.showNamespaces": false,
-  "breadcrumbs.showEnumMembers": false,
-  "breadcrumbs.showConstructors": false,
 
   // ========== Diff editor ==========
   "diffEditor.hideUnchangedRegions.enabled": true,
 
   // ========== Formatting ==========
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.formatOnPaste": false,
   "eslint.run": "onSave",
   "prettier.printWidth": 120,
   "files.trimTrailingWhitespace": true,
-  "gopls": {
-    "formatting.gofumpt": true
-  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "python.analysis.autoImportCompletions": true,
   "makefile.configureOnOpen": false,
+  // "go.lintTool": "golangci-lint",
+  // "go.lintFlags": ["--fast"],
+  "go.lintOnSave": "workspace",
+  "go.showWelcome": false,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[go]": {
-    "editor.defaultFormatter": "golang.go"
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSaveMode": "file"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -216,8 +201,6 @@
   // ========== Extensions ==========
   "extensions.ignoreRecommendations": true,
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  "go.lintOnSave": "workspace",
-  "go.showWelcome": false,
 
   // ========== Vscord ==========
   "vscord.app.name": "Visual Studio Code",
@@ -226,7 +209,7 @@
   "vscord.status.problems.enabled": false,
   "vscord.status.details.text.editing": "In {workspace}",
   "vscord.status.details.text.viewing": "In {workspace}",
-  "vscord.status.state.text.editing": "Working on {file_name}{file_extension}",
+  "vscord.status.state.text.editing": "Working on {file_extension}",
   "vscord.status.state.idle.enabled": false,
   "vscord.status.buttons.button1.enabled": false,
   "vscord.status.buttons.button1.git.active.enabled": false,
@@ -241,6 +224,8 @@
   "vscord.status.image.small.viewing.key": "",
   "vscord.status.image.small.viewing.text": "",
   "vscord.behaviour.suppressNotifications": true,
+  "vscord.status.idle.timeout": 0,
+  "vscord.status.details.enabled": false,
 
   // ========== Peacock ==========
   "peacock.affectActivityBar": false,
@@ -264,10 +249,6 @@
   "vim.leader": "<Space>",
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
-  // "vim.handleKeys": {
-  //   "<C-[>": false,
-  //   "<C-]>": false
-  // },
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -276,16 +257,49 @@
   ],
   "vim.normalModeKeyBindings": [
     {
+      "before": ["g", "r"],
+      "commands": ["editor.action.rename"],
+      "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["g", "f"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
       "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["leader", "r"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["leader", "o"],
+      "commands": ["workbench.action.files.openFolder"]
+    },
+    {
+      "before": ["leader", "b"],
+      "commands": ["extension.vim_ctrl+6"]
+    },
+    {
+      "before": ["leader", "space"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
       "before": ["leader", "x"],
       "commands": [":wq"]
     },
     {
-      "before": ["[", "b"],
+      "before": ["H"],
       "commands": [":bprevious"]
+    },
+    {
+      "before": ["L"],
+      "commands": [":bnext"]
     }
   ],
 
@@ -299,81 +313,81 @@
   "cody.commandHints.enabled": false,
 
   // ======== Random Theme Switcher ========
+  "randomThemeSwitcher.switchMode": "manual",
   "randomThemeSwitcher.themeList": [
-    "Andromeda",
-    "Atom Background Modified Italic",
+    "Default Dark Modern",
     "Atom One Dark",
-    "Bearded Theme Altica",
-    "Bearded Theme Anthracite",
-    "Bearded Theme Aquarelle Cymbidium",
-    "Bearded Theme Aquarelle Hydrangea",
-    "Bearded Theme Aquarelle Lilac",
+    "Monochrome Dark",
+    "Nord",
+    "Bearded Theme Monokai Metallian",
+    "Bearded Theme Monokai Terra",
+    "Bearded Theme Monokai Stone",
+    "Bearded Theme Monokai Black",
+    "Bearded Theme Monokai Reversed",
+    "Bearded Theme Solarized",
+    "Bearded Theme Solarized Reversed",
+    "Bearded Theme Oceanic",
+    "Bearded Theme Oceanic Reversed",
     "Bearded Theme Arc",
-    "Bearded Theme Arc Blueberry",
     "Bearded Theme Arc Eggplant",
     "Bearded Theme Arc EolStorm",
+    "Bearded Theme Arc Blueberry",
     "Bearded Theme Arc Reversed",
     "Bearded Theme Black & Amethyst",
     "Bearded Theme Black & Amethyst Soft",
+    "Bearded Theme Black & Diamond",
     "Bearded Theme Black & Diamond Soft",
+    "Bearded Theme Black & Emerald",
     "Bearded Theme Black & Emerald Soft",
+    "Bearded Theme Black & Gold",
     "Bearded Theme Black & Gold Soft",
+    "Bearded Theme Black & Ruby",
     "Bearded Theme Black & Ruby Soft",
-    "Bearded Theme Coffee",
-    "Bearded Theme Coffee Reversed",
-    "Bearded Theme Earth",
-    "Bearded Theme Monokai Black",
-    "Bearded Theme Monokai Metallian",
-    "Bearded Theme Monokai Reversed",
-    "Bearded Theme Monokai Stone",
-    "Bearded Theme Monokai Terra",
-    "Bearded Theme Oceanic",
-    "Bearded Theme Oceanic Reversed",
-    "Bearded Theme Solarized",
-    "Bearded Theme Solarized Reversed",
-    "Bearded Theme Stained Blue",
     "Bearded Theme Stained Purple",
-    "Bearded Theme Surprising Blueberry",
-    "Bearded Theme Surprising Eggplant",
-    "Bearded Theme Surprising Watermelon",
-    "Bearded Theme Vivid Black",
+    "Bearded Theme Stained Blue",
     "Bearded Theme Vivid Purple",
-    "Bearded Theme Void",
+    "Bearded Theme Vivid Black",
+    "Bearded Theme feat. Will",
     "Bearded Theme feat. Gold D Raynh",
     "Bearded Theme feat. Melle Julie",
-    "Bearded Theme feat. Will",
-    "Default Dark Modern",
-    "Field Lights",
-    "GitHub Dark",
-    "GitHub Dark Default",
-    "GitHub Dark Dimmed",
-    "Gruvbox Dark Hard",
-    "Gruvbox Dark Medium",
-    "Gruvbox Dark Soft",
+    "Bearded Theme Earth",
+    "Bearded Theme Coffee",
+    "Bearded Theme Coffee Reversed",
+    "Bearded Theme Void",
+    "Bearded Theme Altica",
+    "Bearded Theme Anthracite",
+    "Bearded Theme Surprising Eggplant",
+    "Bearded Theme Surprising Blueberry",
+    "Bearded Theme Surprising Watermelon",
+    "Bearded Theme Aquarelle Cymbidium",
+    "Bearded Theme Aquarelle Hydrangea",
+    "Bearded Theme Aquarelle Lilac",
+    "Andromeda",
+    "Andromeda Bordered",
+    "Tokyo Night",
+    "Tokyo Night Storm",
     "Material Theme",
+    "Material Theme High Contrast",
     "Material Theme Darker",
     "Material Theme Darker High Contrast",
-    "Material Theme DeepForest High Contrast",
-    "Material Theme Deepforest",
-    "Material Theme High Contrast",
-    "Material Theme Ocean",
-    "Material Theme Ocean High Contrast",
     "Material Theme Palenight",
     "Material Theme Palenight High Contrast",
-    "Monochrome Dark",
-    "Monokai Classic",
-    "Monokai Pro",
-    "Monokai Pro (Filter Machine)",
-    "Monokai Pro (Filter Octagon)",
-    "Monokai Pro (Filter Ristretto)",
-    "Monokai Pro (Filter Spectrum)",
-    "Nord",
-    "Palenight (Mild Contrast)",
-    "Palenight Theme",
+    "Material Theme Ocean",
+    "Material Theme Ocean High Contrast",
+    "Material Theme Deepforest",
+    "Material Theme DeepForest High Contrast",
+    "GitHub Dark Default",
+    "GitHub Dark Dimmed",
+    "GitHub Dark",
+    "Gruvbox Dark Medium",
+    "Gruvbox Dark Hard",
+    "Gruvbox Dark Soft",
+    "Atom Background Modified",
+    "poimandres-noitalics",
+    "poimandres-noitalics-storm",
     "Panda Syntax",
-    "Tokyo Night",
-    "Tokyo Night Storm"
-  ],
-
-  "randomThemeSwitcher.switchMode": "manual"
+    "Palenight Theme",
+    "Palenight Operator",
+    "Palenight (Mild Contrast)"
+  ]
 }

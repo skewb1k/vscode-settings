@@ -1,5 +1,7 @@
 #!/bin/bash
 code --install-extension aaron-bond.better-comments
+code --install-extension adpyke.vscode-sql-formatter
+code --install-extension ahmadawais.emoji-log-vscode
 code --install-extension akamud.vscode-theme-onedark
 code --install-extension anotherglitchinthematrix.monochrome
 code --install-extension arcticicestudio.nord-visual-studio-code
@@ -7,10 +9,12 @@ code --install-extension arjun.swagger-viewer
 code --install-extension aykutsarac.jsoncrack-vscode
 code --install-extension bbenoist.nix
 code --install-extension beardedbear.beardedtheme
+code --install-extension bengreenier.vscode-node-readme
 code --install-extension cardinal90.multi-cursor-case-preserve
 code --install-extension chrisdias.vscode-opennewinstance
 code --install-extension christian-kohler.npm-intellisense
 code --install-extension christian-kohler.path-intellisense
+code --install-extension clinyong.vscode-css-modules
 code --install-extension codezombiech.gitignore
 code --install-extension cweijan.dbclient-jdbc
 code --install-extension cweijan.vscode-database-client2
@@ -24,25 +28,25 @@ code --install-extension eliverlara.andromeda
 code --install-extension enkia.tokyo-night
 code --install-extension equinusocio.vsc-material-theme
 code --install-extension esbenp.prettier-vscode
-code --install-extension formulahendry.auto-rename-tag
 code --install-extension formulahendry.code-runner
 code --install-extension fractalbrew.backticks
 code --install-extension github.github-vscode-theme
 code --install-extension github.vscode-pull-request-github
 code --install-extension golang.go
 code --install-extension hars.cppsnippets
+code --install-extension ibm.output-colorizer
 code --install-extension jaluik.dot-log
 code --install-extension jdinhlife.gruvbox
+code --install-extension jeff-hykin.better-cpp-syntax
 code --install-extension jock.svg
 code --install-extension johnpapa.vscode-peacock
+code --install-extension kevinkyang.auto-comment-blocks
 code --install-extension kevinrose.vsc-python-indent
 code --install-extension leonardssh.vscord
-code --install-extension liuchao.go-struct-tag
 code --install-extension mechatroner.rainbow-csv
 code --install-extension mgesbert.python-path
 code --install-extension mhutchie.git-graph
 code --install-extension monish.regexsnippets
-code --install-extension monokai.theme-monokai-pro-vscode
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.black-formatter
 code --install-extension ms-python.debugpy
@@ -58,7 +62,10 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension napthedevhcj.atom-background-modified
 code --install-extension njpwerner.autodocstring
 code --install-extension njqdev.vscode-python-typehint
+code --install-extension ofhumanbondage.react-proptypes-intellisense
 code --install-extension pkief.material-icon-theme
+code --install-extension pmndrs.pmndrs
+code --install-extension quicktype.quicktype
 code --install-extension randomfractalsinc.snippets-viewer
 code --install-extension rangav.vscode-thunder-client
 code --install-extension redhat.vscode-xml
@@ -66,6 +73,7 @@ code --install-extension redhat.vscode-yaml
 code --install-extension sourcegraph.cody-ai
 code --install-extension syler.sass-indented
 code --install-extension tinkertrain.theme-panda
+code --install-extension tomoki1207.pdf
 code --install-extension twxs.cmake
 code --install-extension tyriar.lorem-ipsum
 code --install-extension uctakeoff.vscode-counter
@@ -80,5 +88,7 @@ code --install-extension vscodevim.vim
 code --install-extension wakatime.vscode-wakatime
 code --install-extension whizkydee.material-palenight-theme
 code --install-extension wix.vscode-import-cost
+code --install-extension wmaurer.change-case
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zanza00.random-theme-switcher
+code --install-extension zefzhou44.json-sql-to-go
